@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:background="#FD5F00"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_layout"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/vamos_rachar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="Vamos Rachar?"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textFontWeight="500"
+             />
+
+        <TextView
+            android:id="@+id/valor_dividido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Informe o valor total e quantidade de pessoas para saber o valor individual."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/valor_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:hint="Qual o valor total?"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/qtd_pessoas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:hint="Quantas pessoas?"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+
+            <Button
+                android:id="@+id/btn_speech"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="Por Som"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#FE9A01"
+                 />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Compartilhar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"
+                 />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
