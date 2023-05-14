@@ -8,8 +8,7 @@
     android:background="#FD5F00"
     >
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="40dp"
@@ -89,12 +88,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
-                android:text="Por Som"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
                 android:background="@drawable/rounded_button"
                 android:backgroundTint="#FE9A01"
-                 />
+                android:text="Por Som"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btn_share"
@@ -103,11 +101,10 @@
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="Compartilhar"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
                 android:background="@drawable/rounded_button"
-                 />
+                android:text="Compartilhar"
+                android:textColor="#212121"
+                android:textSize="16sp" />
 
 
         </LinearLayout>
