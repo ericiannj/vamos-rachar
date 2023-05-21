@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Vamos Rachar?</string>
+    <string name="app_name">Lets Split?</string>
+    <string name="app_desc">Enter the total value and number of people to know the individual value.</string>
+    <string name="total_value">What is the total value?</string>
+    <string name="number_people">How many people?</string>
+    <string name="sound_button">By Sound</string>
+    <string name="share">share with:</string>
+    <string name="share_button">SHARE IT</string>
+    <string name="result">The individual value is R$</string>
+    <string name="confirm_total">Confirm the total value, please.</string>
+    <string name="confirm_people">Confirm the number of people, please.</string>
 </resources>

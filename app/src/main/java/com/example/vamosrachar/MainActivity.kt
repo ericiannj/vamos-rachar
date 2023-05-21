@@ -42,9 +42,9 @@ class MainActivity : ComponentActivity() {
 
                 if (dValor != null && dPessoas != null && dPessoas != 0) {
                     valorIndividual = dValor / dPessoas
-                    vDivisao.text = "Valor individual: R$ ${"%.2f".format(valorIndividual)}"
+                    vDivisao.text = getString(R.string.result) + "${"%.2f".format(valorIndividual)}"
                 } else {
-                    vDivisao.text = "Informe o valor total, por favor."
+                    vDivisao.text = getString(R.string.confirm_total)
                 }
             }
         })
@@ -60,10 +60,10 @@ class MainActivity : ComponentActivity() {
 
                 if (dPessoas != null && dPessoas != 0 && dValor != null) {
                     valorIndividual = dValor / dPessoas
-                    vDivisao.text = "O valor individual é R$ ${"%.2f".format(valorIndividual)}"
+                    vDivisao.text = getString(R.string.result) + " ${"%.2f".format(valorIndividual)}"
 
                 } else {
-                    vDivisao.text = "Confirme a quantidade de pessoas, por favor."
+                    vDivisao.text = getString(R.string.confirm_people)
                 }
             }
         })
@@ -78,13 +78,13 @@ class MainActivity : ComponentActivity() {
         }
 
         btnCompartilhar.setOnClickListener {
-            val txtCompartilhado = "O valor individual é R\$ ${"%.2f".format(valorIndividual)}"
+            val txtCompartilhado = getString(R.string.result) + "${"%.2f".format(valorIndividual)}"
 
             val intent = Intent(Intent(ACTION_SEND))
             intent.type = "text/plain"
             intent.putExtra(Intent.EXTRA_TEXT, txtCompartilhado)
 
-            val chooser = Intent.createChooser(intent, "Compartilhar com:")
+            val chooser = Intent.createChooser(intent, getString(R.string.share))
 
             startActivity(chooser)
 
